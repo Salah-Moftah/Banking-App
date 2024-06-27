@@ -14,17 +14,17 @@ const authFormSchema = formSchema('sign-up');
 
 interface CustomInput {
   control: Control<z.infer<typeof authFormSchema>>, 
-  inputName: FieldPath<z.infer<typeof authFormSchema>>,
+  name: FieldPath<z.infer<typeof authFormSchema>>,
   label: string,
   placeholder: string,
 }
 
-const CustomInput = ({ inputName, label, control, placeholder }: CustomInput) => {
+const CustomInput = ({ name, label, control, placeholder }: CustomInput) => {
   return (
     <>
       <FormField
         control={control}
-        name={inputName}
+        name={name}
         render={({ field }) => (
           <div className="form-item">
             <FormLabel className="form-label">{label}</FormLabel>
@@ -34,7 +34,7 @@ const CustomInput = ({ inputName, label, control, placeholder }: CustomInput) =>
                   placeholder={placeholder}
                   className="input-class"
                   {...field}
-                  type={inputName === 'password' ? 'password' : 'text'}
+                  type={name === 'password' ? 'password' : 'text'}
                 />
               </FormControl>
               <FormMessage className="form-message mt-2" />
