@@ -1,9 +1,24 @@
-import React from 'react'
+import HeaderBox from "@/components/HeaderBox"
+import PaymentTransferForm from "@/components/PaymentTransferForm"
+import { useAcounts } from "@/hooks/useCustomHook"
 
-const PaymentTransfer = () => {
+const Transfer = async () => {
+
+  const { account, loggedIn, accountsData } = await useAcounts({});
+
   return (
-    <div>PaymentTransfer</div>
+    <section className='payment-transfer'>
+      <HeaderBox 
+        title="Payment Transfer"
+        subtext="Please provide any specific details or
+        notes related to the payment transfer"
+      />
+
+      <section className="size-full pt-5">
+        <PaymentTransferForm accounts={accountsData} />
+      </section>
+    </section>
   )
 }
 
-export default PaymentTransfer
+export default Transfer
