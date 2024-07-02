@@ -7,35 +7,39 @@
 
 <p>The entire site is designed using Next.js 14 and TypeScript.</p>
 
-<div><h3>Demo: </h3><a href="https://top-movie.vercel.app/" target="_blank">https://top-movie.vercel.app</a></div>
+<div><h3>Demo: </h3><a href="banking-pzgv0ify9-salahmoftahs-projects.vercel.app" target="_blank">banking-pzgv0ify9-salahmoftahs-projects.vercel.app</a></div>
 
 ## Features
 
-- **Movie and TV Show Listings:** Browse through a vast collection of movies and TV shows, including popular, trending, and newly released titles.
+Authentication: An ultra-secure SSR authentication with proper validations and authorization
 
-- **Detailed Information:** Access detailed information about each movie or TV show, including synopsis, cast, release date, and more.
+ Connect Banks: Integrates with Plaid for multiple bank account linking
 
-- **Search Functionality:** Easily search for specific movies or TV shows based on titles, genres, or keywords.
+ Home Page: Shows general overview of user account with total balance from all connected banks, recent transactions, money spent on different categories, etc
 
-- **Responsive Design:** The website is designed to be responsive, providing a seamless experience across various devices, including desktops, tablets, and smartphones.
+ My Banks: Check the complete list of all connected banks with respective balances, account details
 
-- **Dynamic UI Components:** Utilization of dynamic UI components and animations to enhance the user experience.
+ Transaction History: Includes pagination and filtering options for viewing transaction history of different banks
 
-- **Watchlist:** Create a personalized watchlist to keep track of movies and TV shows you want to watch later.
+Real-time Updates: Reflects changes across all relevant pages upon connecting new bank accounts.
 
-- **Trending Movies This Week:** Discover the trending movies of the week and stay up-to-date with what's popular in the world of entertainment.
+ Funds Transfer: Allows users to transfer funds using Dwolla to other accounts with required fields and recipient bank ID.
 
+Responsiveness: Ensures the application adapts seamlessly to various screen sizes and devices, providing a consistent user experience across desktop, tablet, and mobile platforms.
+
+and many more, including code architecture and reusability.
 
 ## Tools and Technologies Used
-- Next.js 13
-- TypeScript
-- Tailwind CSS
-- Axios
-- Flowbite-react
-- Framer Motion
-- Headless UI
-- Swiper js
-- React Icons
+Next.js
+TypeScript
+Appwrite
+Plaid
+Dwolla
+React Hook Form
+Zod
+TailwindCSS
+Chart.js
+ShadCN
 
 ## Contact
 - GitHub [@Salah-Moftah](https://github.com/Salah-Moftah)
