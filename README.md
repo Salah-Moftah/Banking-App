@@ -30,16 +30,16 @@ Responsiveness: Ensures the application adapts seamlessly to various screen size
 and many more, including code architecture and reusability.
 
 ## Tools and Technologies Used
-Next.js
-TypeScript
-Appwrite
-Plaid
-Dwolla
-React Hook Form
-Zod
-TailwindCSS
-Chart.js
-ShadCN
+- Next.js
+- TypeScript
+- Appwrite
+- Plaid
+- Dwolla
+- React Hook Form
+- Zod
+- TailwindCSS
+- Chart.js
+- ShadCN
 
 ## Contact
 - GitHub [@Salah-Moftah](https://github.com/Salah-Moftah)
