@@ -2,6 +2,11 @@ import BankCard from '@/components/BankCard';
 import HeaderBox from '@/components/HeaderBox'
 import { getAccounts } from '@/lib/actions/bank.actions';
 import { getLoggedInUser } from '@/lib/actions/user.actions';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Horizon - My banks",
+};
 
 const MyBanks = async () => {
 

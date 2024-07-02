@@ -1,6 +1,17 @@
 import { logoutAccount } from "@/lib/actions/user.actions"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { Button } from "@/components/ui/button"
+
 
 const Footer = ({ user, type }: FooterProps) => {
 
@@ -29,9 +40,24 @@ const Footer = ({ user, type }: FooterProps) => {
           {user?.email}
         </p>
       </div>
-      <div className="footer_image" onClick={handleLogOut}>
-        <Image src='/icons/logout.svg' alt="logout" fill/>
-      </div>
+      <Dialog>
+      <DialogTrigger asChild>
+        <div className="footer_image">
+          <Image src='/icons/logout.svg' alt="logout" fill/>
+        </div>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px] bg-white">
+        <DialogHeader>
+          <DialogTitle>Log Out</DialogTitle>
+          <DialogDescription>
+            Are you sure you want to get out.
+          </DialogDescription>
+        </DialogHeader>
+        <DialogFooter>
+          <Button className="text-white bg-red-700" type="submit" onClick={handleLogOut}>Log Out</Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
     </footer>
   )
 }

@@ -1,10 +1,15 @@
 import HeaderBox from "@/components/HeaderBox"
 import PaymentTransferForm from "@/components/PaymentTransferForm"
 import { useAcounts } from "@/hooks/useCustomHook"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Horizon - Transfer Funds",
+};
 
 const Transfer = async () => {
 
-  const { account, loggedIn, accountsData } = await useAcounts({});
+  const { accountsData } = await useAcounts({});
 
   return (
     <section className='payment-transfer'>

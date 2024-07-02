@@ -77,7 +77,7 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
             width={24}
             height={24}
           />
-          <p className="text-[16px] text-black-2 font-semibold">
+          <p className="text-[16px] max-xl:hidden text-black-2 font-semibold">
           Connect bank
           </p>
         </Button>

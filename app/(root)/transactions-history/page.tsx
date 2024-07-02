@@ -3,6 +3,11 @@ import { Pagination } from '@/components/Pagination';
 import TransactionsTable from '@/components/TransactionsTable';
 import { useAcounts } from '@/hooks/useCustomHook';
 import { formatAmount } from '@/lib/utils';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Horizon - Transaction History",
+};
 
 const TransactionHistory = async ({searchParams: {id, page} }: SearchParamProps) => {
   
