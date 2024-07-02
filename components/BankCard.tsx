@@ -48,7 +48,7 @@ const BankCard = ({account, userName, showBalance = true}: CreditCardProps) => {
             className='ml-5' />
         </div>
         <Image 
-          src='/icons/Lines.svg'
+          src='/icons/lines.png'
           width={316}
           height={190}
           alt='lines'
