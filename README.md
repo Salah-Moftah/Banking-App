@@ -62,7 +62,7 @@ and many more, including code architecture and reusability.
 
 ## Contact
 - GitHub [@Salah-Moftah](https://github.com/Salah-Moftah)
-- FaceBook [@salahmoftah142](https://www.facebook.com/salahmoftah142)
+- Facebook [@salahmoftah142](https://www.facebook.com/salahmoftah142)
 - LinkedIn [@salah-moftah-12293b219](https://www.linkedin.com/in/salah-moftah-12293b219)
 
 
