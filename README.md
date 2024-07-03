@@ -7,7 +7,7 @@
 
 <p>The entire site is designed using Next.js 14 and TypeScript.</p>
 
-<div><h3>Demo: </h3><a href="banking-pzgv0ify9-salahmoftahs-projects.vercel.app" target="_blank">banking-pzgv0ify9-salahmoftahs-projects.vercel.app</a></div>
+<div><h3>Demo: </h3><a href="https://banking-g07gql68p-salahmoftahs-projects.vercel.app" target="_blank">https://banking-g07gql68p-salahmoftahs-projects.vercel.app</a></div>
 
 ## Features
 
