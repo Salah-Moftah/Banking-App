@@ -45,12 +45,17 @@ and many more, including code architecture and reusability.
 ## Screenshots
 
 - Sign in page
-![sign in](https://github.com/Salah-Moftah/Banking-App/assets/132005420/55759df3-7236-4120-8a35-018061d52fef)
+
+![sign in](https://github.com/Salah-Moftah/Banking-App/assets/132005420/38ce051c-c740-4dc7-afd5-fd119985ef5f)
+
 
 - Sign up page
-![sign up](https://github.com/Salah-Moftah/Banking-App/assets/132005420/c1117441-9bcf-454f-a524-abd5021e8e21)
+
+![sign up](https://github.com/Salah-Moftah/Banking-App/assets/132005420/5aa0815b-a5a2-472a-ae04-f6fb05f5ad3d)
+
 
 - Home page
+
 ![home page](https://github.com/Salah-Moftah/Banking-App/assets/132005420/066a8d82-fd2c-4931-a483-5aa27ce070de)
 
 
