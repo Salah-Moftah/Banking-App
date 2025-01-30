@@ -1,5 +1,5 @@
 
-<h1 align="center">Horizon-App</h1>
+<h1 align="center">Bankler-App</h1>
 
 ## Overview
 
