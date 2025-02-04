@@ -21,6 +21,9 @@ export const getAccounts = async ({ userId }: getAccountsProps) => {
     // get banks from db
     const banks = await getBanks({ userId });
 
+  if (!banks || banks.length === 0) {
+    throw new Error("No banks found for the user.");
+  }
     const accounts = await Promise.all(
       banks?.map(async (bank: Bank) => {
         // get each account info from plaid
@@ -114,8 +117,11 @@ export const getAccount = async ({ appwriteItemId }: getAccountProps) => {
       appwriteItemId: bank.$id,
     };
 
+    const validTransactions = Array.isArray(transactions) ? transactions : [];
+    const validTransferTransactions = Array.isArray(transferTransactions) ? transferTransactions : [];
+    
     // sort transactions by date such that the most recent transaction is first
-      const allTransactions = [...transactions, ...transferTransactions].sort(
+    const allTransactions = [...validTransactions, ...validTransferTransactions].sort(
       (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     );
 
@@ -181,5 +187,6 @@ export const getTransactions = async ({
     return parseStringify(transactions);
   } catch (error) {
     console.error("An error occurred while getting the accounts:", error);
+    return [];
   }
 };

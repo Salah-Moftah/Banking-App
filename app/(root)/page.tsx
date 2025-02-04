@@ -5,7 +5,7 @@ import TotalBalanceBox from "@/components/TotalBalanceBox";
 import { useAcounts } from "@/hooks/useCustomHook";
 
 const Home = async ({ searchParams: {id, page} }: SearchParamProps) => {
-
+  
   const { 
     currentPage,
     account,

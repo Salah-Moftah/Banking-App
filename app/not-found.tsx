@@ -6,7 +6,7 @@ import {  useRouter } from "next/navigation"
 
 const NotFound = () => {
 
-  const router =   useRouter();
+  const router = useRouter();
 
   const handleBackToHome = () => {
     router.push('/');

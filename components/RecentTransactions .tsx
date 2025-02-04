@@ -4,7 +4,6 @@ import { BankTabItem } from "./BankTabItem";
 import BankInfo from "./BankInfo";
 import TransactionsTable from "./TransactionsTable";
 import { Pagination } from "./Pagination";
-import { Suspense } from "react";
 
 
 const RecentTransactions  = ({
@@ -13,6 +12,14 @@ const RecentTransactions  = ({
   appwriteItemId,
   page= 1,
 }: RecentTransactionsProps) => {
+  
+  if (!transactions || transactions.length === 0) {
+    return (
+      <div className="no-transactions">
+        No recent transactions available.
+      </div>
+    );
+  }
 
   const rowsPerPage = 10;
   const totalPages = Math.ceil(transactions.length / rowsPerPage);

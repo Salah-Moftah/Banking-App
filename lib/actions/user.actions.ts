@@ -11,10 +11,20 @@ import { revalidatePath } from "next/cache";
 import { addFundingSource, createDwollaCustomer } from "./dwolla.actions";
 
 const {
-  APPWRITE_DATABASE_ID: DATABASE_ID,
-  APPWRITE_USER_COLLECTION_ID: USER_COLLECTION_ID,
-  APPWRITE_BANK_COLLECTION_ID: BANK_COLLECTION_ID,
-} = process.env;
+  APPWRITE_DATABASE_ID,
+  APPWRITE_USER_COLLECTION_ID,
+  APPWRITE_BANK_COLLECTION_ID
+  } = process.env;
+  
+  const DATABASE_ID = APPWRITE_DATABASE_ID || '667a10bc00126833a0f1';
+  const USER_COLLECTION_ID = APPWRITE_USER_COLLECTION_ID || '667a10f4002657f7d810';
+  const BANK_COLLECTION_ID = APPWRITE_BANK_COLLECTION_ID || '667a118600045afa5713'
+
+// const {
+//   APPWRITE_DATABASE_ID: DATABASE_ID,
+//   APPWRITE_USER_COLLECTION_ID: USER_COLLECTION_ID,
+//   APPWRITE_BANK_COLLECTION_ID: BANK_COLLECTION_ID,
+// } = process.env;
 
 export const getUserInfo = async ({ userId }: getUserInfoProps) => {
   try {
@@ -140,7 +150,7 @@ export const createLinkToken = async (user: User) => {
         client_user_id: user.$id
       },
       client_name: `${user.firstName} ${user.lastName}`,
-      products: ['auth'] as Products[],
+      products: ['auth', 'transactions'] as Products[],
       language: 'en',
       country_codes: ['US'] as CountryCode[],
     }
@@ -152,6 +162,8 @@ export const createLinkToken = async (user: User) => {
     console.log(error);
   }
 }
+
+
 
 export const createBankAccount = async ({
   userId,
