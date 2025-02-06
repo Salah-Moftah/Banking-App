@@ -1,5 +1,5 @@
 
-<h1 align="center">Bankler-App</h1>
+<h1 align="center">Banking-App</h1>
 
 ## Overview
 
@@ -7,7 +7,7 @@
 
 <p>The entire site is designed using Next.js 14 and TypeScript.</p>
 
-<div><h3>Demo: </h3><a href="https://banking.finlaytech.ca" target="_blank">https://banking.finlaytech.ca</a></div>
+<div><h3>Demo: </h3><a href="https://banking-app-sigma.vercel.app" target="_blank">https://banking-app-sigma.vercel.app</a></div>
 
 ## Features
 
